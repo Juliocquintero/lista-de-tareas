@@ -31,7 +31,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 62px;
-    background-color: rgba(10, 17, 31, .8);
+    background-color: var(--Rich-Black)
 }
 
 main{
@@ -135,7 +135,7 @@ main form {
     color: var(--withe);
     font-size: 1.8rem;
     padding: 10px;
-    margin: 40px auto;
+    margin: 45.5px auto;
     padding-left: 10px;
     cursor: pointer;
     outline: none;
@@ -199,7 +199,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--oxford-blue);
+    background-color: var(--Rich-Black);
 }
 
 .footer-left{
