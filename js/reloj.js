@@ -62,5 +62,4 @@
 
     var interval = setInterval (actualizarHora, 1000)
     
-    
 }())

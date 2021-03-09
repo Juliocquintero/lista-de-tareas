@@ -61,8 +61,7 @@
         }
         else {
             lista.className = "lista";
-        }
-        
+        }  
     })
 
     //agregar tarea
