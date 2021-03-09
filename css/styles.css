@@ -156,11 +156,10 @@ main form {
 
 .lista li a{
     display: block;
-    padding: 20px 0;
-    font-size: 2rem;
+    padding: 20px;
+    font-size: 1.8rem;
     text-decoration: none;
     color: var(--cultured);
-    padding-left: 20px;
 }
 .lista li a:hover{
     text-decoration: line-through;
@@ -186,6 +185,7 @@ footer{
 
 .footer-left h3{
     font-size: 1.5rem;
+    padding: 10px 0;
     text-align: center;
     color: var(--platinum);
 }
