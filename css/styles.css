@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 46px;
+    height: 42px;
     background-color: rgba(10, 17, 31, .8);
 }
 
@@ -69,7 +69,6 @@ section {
 	text-align: center;
 	font-size:1.5em;
 	margin-bottom: 0.3125rem;
-	/*margin-bottom: 5px;*/
 	background: rgba(10, 17, 31, .8);
 	padding: 20px;
 	width: 100%;
@@ -105,7 +104,6 @@ main h1{
 main form {
     width: 100%;
     min-width: 320px;
-    height: 25vh;
 }
 
 .tarea-input{
@@ -120,9 +118,7 @@ main form {
 }
 
 .tarea-input[type=text] {
-	margin-bottom: 20px;
 	padding: 20px;
-
 }
 
 .error {
@@ -147,12 +143,15 @@ main form {
 }
 
 .tareas{
-    width: 100%;
+    width: 80%;
     background-color: rgba(10, 17, 31, .8);
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .lista li{
     border-bottom: 1px solid #B6B6B6;
+    list-style: none;
 }
 
 .lista li a{
@@ -223,4 +222,11 @@ footer{
 
 .github{
     background-image: url(../assets/icon/github.png);
+}
+
+
+@media screen and (min-width:760px){
+    .tareas{
+        width: 100%;}
+
 }
