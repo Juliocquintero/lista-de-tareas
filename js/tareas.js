@@ -1,7 +1,10 @@
+
+
 (function () {
     var lista = document.getElementById ("lista");
     var tareaInput = document.getElementById ("tarea-input");
     var tareaBtn = document.getElementById ("tarea-button");
+    var ordenBtn = document.getElementById ("orden-button")
 
     //funciones
     var agregarTarea = function () {
@@ -22,8 +25,11 @@
         enlace.setAttribute ("href", "#");
         //introducimos el enlace a el li
         nuevaTarea.appendChild (enlace);
+
+        var primerElemento = document.getElementsByTagName("li")[0];
+
         //agregamos la lista al ul
-        lista.appendChild(nuevaTarea);
+        lista.insertBefore(nuevaTarea, primerElemento);
 
         tareaInput.value = "";
 
@@ -45,7 +51,19 @@
     
     };      
 
+
     //eventos
+
+    // ordenar lista
+    ordenBtn.addEventListener("click", function () {
+        if (lista.className === "lista"){
+            lista.className = "lista ordenada";
+        }
+        else {
+            lista.className = "lista";
+        }
+        
+    })
 
     //agregar tarea
     tareaBtn.addEventListener("click", agregarTarea);

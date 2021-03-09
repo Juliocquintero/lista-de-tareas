@@ -142,6 +142,7 @@ main form {
     box-shadow: 1px 1px 2px 1px var(--Rich-Black);
 }
 
+
 .tareas{
     width: 80%;
     background-color: rgba(10, 17, 31, .8);
@@ -149,9 +150,36 @@ main form {
     margin-top: 20px;
 }
 
+.wrap{
+    position: relative;
+}
+
+.orden{
+    position: absolute;
+    top: -11.5%;
+    right: 1%;
+    width: 32px;
+    color: var(--platinum);
+    background-color: transparent;
+    border: transparent;
+    outline:rgba(20, 33, 61, 1);
+    cursor: pointer;
+}
+
+
+.lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.ordenada{
+    flex-direction: column-reverse;
+}
+
 .lista li{
     border-bottom: 1px solid #B6B6B6;
     list-style: none;
+
 }
 
 .lista li a{
