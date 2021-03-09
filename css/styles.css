@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root  {
+    --black: rgba(0, 0, 0, 1);
+    --Rich-Black: rgba(10, 17, 31, 1);
+    --oxford-blue: rgba(20, 33, 61, 1);
+    --coyote-brown: rgba(136, 98, 39, 1);
+    --orange-web: rgba(252, 163, 17, 1);
+    --Gold-crayola: rgba(241, 196, 123, 1);
+    --cultured: rgba(242, 242, 242, 1);
+    --platinum: rgba(229, 229, 229, 1);
+    --withe: rgba(255, 255, 255, 1);
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--oxford-blue);
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    background-color: rgba(10, 17, 31, .8);
+}
+
+main{
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--oxford-blue);
+
+}
+
+section {
+    width: 100%;
+    min-width: 320px;
+}
+
+.widget {
+    width: 70%;
+	min-width: 260px;
+    max-width: 320px;
+	margin: 10px auto
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+    color: var(--platinum);
+}
+.widget span {
+	display: inline-block;
+	line-height: 1em;
+    color: var(--platinum);
+}
+
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size:1.5em;
+	margin-bottom: 0.3125rem;
+	/*margin-bottom: 5px;*/
+	background: rgba(10, 17, 31, .8);
+	padding: 20px;
+	width: 100%;
+}
+
+.reloj {
+	font-family: Oswald, Arial;
+	width: 100%;
+	padding: 20px;
+	font-size: 4em;
+	text-align: center;
+	background: rgba(10, 17, 31, .8);
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 2rem;
+	display: block;
+}
+/*==================================================================================================================================*/
+
+
+main h1{
+    margin: 20px;
+    color: var(--platinum);
+    font-size: 3.5rem;
+    text-align: center;
+}
+main form {
+    width: 100%;
+    min-width: 320px;
+    height: 25vh;
+}
+
+.tarea-input{
+    display: block;
+    width: 80%;
+    max-width: 760px;
+    height: 50px;
+    margin: 50px auto;
+    outline: none;
+    box-shadow: 1px 1px 2px 2px var(--Rich-Black);
+
+}
+
+.tarea-input[type=text] {
+	margin-bottom: 20px;
+	padding: 20px;
+
+}
+
+.error {
+    box-shadow: 1px 1px 2px 3px var(--Gold-crayola);
+    color:var(--Gold-crayola);
+}
+
+.tarea-button{
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    background-color: var(--orange-web);
+    border:  1px solid var(--coyote-brown);
+    color: var(--withe);
+    font-size: 1.8rem;
+    padding: 10px;
+    margin: 50px auto;
+    padding-left: 10px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 2px 1px var(--Rich-Black);
+}
+
+.tareas{
+    width: 100%;
+    background-color: rgba(10, 17, 31, .8);
+}
+
+.lista li{
+    border-bottom: 1px solid #B6B6B6;
+}
+
+.lista li a{
+    display: block;
+    padding: 20px 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--cultured);
+    padding-left: 20px;
+}
+.lista li a:hover{
+    text-decoration: line-through;
+}
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--oxford-blue);
+}
+
+.footer-left{
+    min-width: 320px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.footer-left h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--platinum);
+}
+
+.footer-right{
+    min-width: 320px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.footer-right a{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin: 10px 20px;
+}
+
+.facebook{
+    background-image: url(../assets/icon/facebook.png);
+}
+
+.instagram{
+    background-image: url(../assets/icon/instagram.png);
+}
+
+.twitter{
+    background-image: url(../assets/icon/twitter.png);
+}
+
+.github{
+    background-image: url(../assets/icon/github.png);
+}

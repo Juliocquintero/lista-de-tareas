@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/icon/Jqolgo.png" type="image/x-icon">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+
+    <header>
+        <a href=""> <img src="./assets/icon/Jqolgo.png" alt="Logo de Julio Quintero" height="32px" width="auto"> </a>
+    </header>
+
+    <main>
+        <section>
+            <div class="widget">
+                <div class="fecha">
+                    <p id="diaSemana" class="diaSemana"></p>
+                    <span>, &nbsp; </span>
+                    <p id="dia" class="dia"></p>
+                    <p>de </p>
+                    <p id="mes" class="mes"></p>
+                    <p>del </p>
+                    <p id="year" class="year"></p>
+                </div>
+        
+                <div class="reloj">
+                    <p id="horas" class="horas"></p>
+                    <span> : </span>
+                    <p id="minutos" class="minutos"></p>
+                    <span> : </span>
+                    <div class="caja-segundos">
+                        <p id="ampm" class="ampm"></p>
+                        <p id="segundos" class="segundos"></p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+    <section>
+             <h1> Lista de tareas</h1>
+        <form action="" method="get">
+            <input class="tarea-input" id="tarea-input" type="text" placeholder="Ingresa aquí tu tarea">
+            <input class="tarea-button" id="tarea-button" type="button" value="Agregar Tarea">
+        </form>
+
+        <div class="tareas">
+            <div class="wrap">
+                <ol class="lista" id="lista">
+                    <li><a href="#"> Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="#"> Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="#"> Lorem ipsum dolor sit amet.</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    </main>
+        <footer>
+            <div class="footer-left">
+                <h3>Realizado por Julio Quintero, 2021.</h3>
+            </div>
+
+            <div class="footer-right">
+                <a class="facebook" href="https://www.facebook.com/juliocquinterog/" target="blank" ></a>
+                <a class="instagram" href="https://www.instagram.com/julioquintero__/" target="blank"></a> 
+                <a class="twitter" href="https://twitter.com/JulioQuintero_" target="blank"></a> 
+                <a class="github" href="https://github.com/Juliocquintero" target="blank"> </a> 
+                
+            </div>           
+        </footer>
+
+        <script src="./js/tareas.js"> </script>
+        <script src="./js/reloj.js"> </script>
+</body>
+</html>
